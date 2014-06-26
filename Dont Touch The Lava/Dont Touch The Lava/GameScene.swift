@@ -8,7 +8,11 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    //Physics
+    let playerCategory: UInt32 = 1 << 0
+    let groundCategory: UInt32 = 1 << 1
     
     //SKNodes
     let playerSprite = SKSpriteNode(imageNamed:"character@2x")
@@ -16,28 +20,36 @@ class GameScene: SKScene {
     
     var touchLoc = CGPoint()
     var isTouching = false
+    var shouldJump = false
+    var jumpCounter = 0
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
-        //self.physicsWorld.gravity = CGVectorMake(0.0, -1.0)
-        //self.physicsBody = SKPhysicsBody(edgeLoopFromRect: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height))
-
+        self.physicsWorld.gravity = CGVectorMake(0.0, -4.0)
+        self.physicsWorld.contactDelegate = self
+        physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        
         //Player
         playerSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         playerSprite.xScale = 2
         playerSprite.yScale = 2
         playerSprite.physicsBody = SKPhysicsBody(rectangleOfSize: playerSprite.size)
         playerSprite.physicsBody.dynamic = true
-        playerSprite.physicsBody.restitution = 0.4
+        playerSprite.physicsBody.categoryBitMask = playerCategory
+        playerSprite.physicsBody.collisionBitMask = groundCategory
+        playerSprite.physicsBody.contactTestBitMask = groundCategory
         
         groundSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:(CGRectGetMinY(self.frame)+137))
         groundSprite.physicsBody = SKPhysicsBody(rectangleOfSize: groundSprite.size)
         groundSprite.physicsBody.dynamic = false
+        groundSprite.physicsBody.friction = 0
+        groundSprite.physicsBody.categoryBitMask = groundCategory
         groundSprite.name = "ground"
         
         self.addChild(playerSprite)
         self.addChild(groundSprite)
+        
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -45,32 +57,25 @@ class GameScene: SKScene {
         
         isTouching = true
         
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            touchLoc = location
-
-            if (location.y < 137)
+        let touch:UITouch = touches.anyObject() as UITouch
+        let location:CGPoint = touch.locationInNode(self)
+        
+        touchLoc = location
+        
+        let nodes:NSArray = nodesAtPoint(touch.locationInNode(self))
+        for groundSprite : AnyObject in nodes
+        {
+            shouldJump = true
+            if (jumpCounter < 2)
             {
-                playerJumpY()
+                movePlayerY()
             }
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            //self.addChild(sprite)
         }
     }
    
     override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
         isTouching = false
+        shouldJump = false
         
     }
     
@@ -78,37 +83,40 @@ class GameScene: SKScene {
     {
         if (touchLoc.x < (CGRectGetMaxX(self.frame)/2))
         {
-            //Send playerSprite left
-            playerSprite.position.x -= 3
+            var moveActionLeft = (SKAction.moveByX(-5, y: 0, duration: 0.1))
+            playerSprite.runAction(moveActionLeft)
         }
         else if (touchLoc.x > (CGRectGetMaxX(self.frame)/2))
         {
-            //Send playerSprite right
-            playerSprite.position.x += 3
+            var moveActionRight = (SKAction.moveByX(5, y: 0, duration: 0.1))
+            playerSprite.runAction(moveActionRight)
         }
     }
     
-    func playerJumpY()
+    func movePlayerY()
     {
-        if (isTouching)
-        {
-            playerSprite.physicsBody.velocity.dy = 3
+        playerSprite.physicsBody.velocity = CGVectorMake(playerSprite.physicsBody.velocity.dx, 250)
+        jumpCounter++
+    }
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+    
+        if (contact.bodyA.categoryBitMask & groundCategory ) == groundCategory || ( contact.bodyB.categoryBitMask & groundCategory ) == groundCategory {
+            //Player contacts groud
+            jumpCounter = 0
         }
-        else
-        {
-            playerSprite.physicsBody.velocity.dy = 0
-        }
+    
     }
     
     override func update(currentTime: CFTimeInterval)
     {
-        /* Called before each frame is rendered */
         if (isTouching)
         {
-            movePlayerX()
+            if (!shouldJump)
+            {
+                movePlayerX()
+            }
         }
-        
     }
-    
 
 }

@@ -16,7 +16,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //SKNodes
     let playerSprite = SKSpriteNode(imageNamed:"character@2x")
-    
+    let platformSprite = SKSpriteNode(imageNamed:"platform")
+    let groundSprite = SKSpriteNode(imageNamed:"ground")
     
     var touchLoc = CGPoint()
     var isTouching = false
@@ -53,11 +54,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         return playerSprite
     }
     
+    //Create platform
+    func createPlatform() -> SKSpriteNode
+    {
+        var minY = (platformSprite.size.height/2) + 137
+        var maxY = (self.frame.size.height - platformSprite.size.height)
+        var rangeY = maxY - minY
+        //var actualY = (arc4random() % rangeY)
+        
+        return platformSprite
+    }
+    
     //Create Ground
     func createGround() -> SKSpriteNode
     {
-        let groundSprite = SKSpriteNode(imageNamed:"ground")
-
         groundSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:(CGRectGetMinY(self.frame)+137))
         groundSprite.physicsBody = SKPhysicsBody(rectangleOfSize: groundSprite.size)
         groundSprite.physicsBody.dynamic = false
@@ -120,7 +130,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
-    
         if (contact.bodyA.categoryBitMask & groundCategory ) == groundCategory || ( contact.bodyB.categoryBitMask & groundCategory ) == groundCategory {
             //Player contacts groud
             jumpCounter = 0

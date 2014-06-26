@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		246862CD195CD7240050904F /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = 246862CC195CD7240050904F /* platform.png */; };
 		24FF91EE195BB80F00B2AF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91ED195BB80F00B2AF69 /* AppDelegate.swift */; };
 		24FF91F0195BB80F00B2AF69 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24FF91EF195BB80F00B2AF69 /* GameScene.sks */; };
 		24FF91F2195BB80F00B2AF69 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91F1195BB80F00B2AF69 /* GameScene.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		246862CC195CD7240050904F /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
 		24FF91E8195BB80F00B2AF69 /* Dont Touch The Lava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dont Touch The Lava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF91EC195BB80F00B2AF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24FF91ED195BB80F00B2AF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				24FF91F5195BB80F00B2AF69 /* Main.storyboard */,
 				24FF920E195BBAD600B2AF69 /* character@2x.png */,
 				24FF9210195BC10800B2AF69 /* ground.png */,
+				246862CC195CD7240050904F /* platform.png */,
 				24FF91F8195BB80F00B2AF69 /* Images.xcassets */,
 				24FF91EB195BB80F00B2AF69 /* Supporting Files */,
 			);
@@ -205,6 +208,7 @@
 				24FF91F0195BB80F00B2AF69 /* GameScene.sks in Resources */,
 				24FF920F195BBAD600B2AF69 /* character@2x.png in Resources */,
 				24FF91F7195BB80F00B2AF69 /* Main.storyboard in Resources */,
+				246862CD195CD7240050904F /* platform.png in Resources */,
 				24FF9211195BC10800B2AF69 /* ground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +419,7 @@
 				24FF920A195BB80F00B2AF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24FF920B195BB80F00B2AF69 /* Build configuration list for PBXNativeTarget "Dont Touch The LavaTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				24FF920D195BB80F00B2AF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

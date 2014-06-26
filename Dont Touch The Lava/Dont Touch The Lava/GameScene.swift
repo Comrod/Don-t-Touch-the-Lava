@@ -16,7 +16,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //SKNodes
     let playerSprite = SKSpriteNode(imageNamed:"character@2x")
-    let groundSprite = SKSpriteNode(imageNamed:"ground")
+    
     
     var touchLoc = CGPoint()
     var isTouching = false
@@ -26,11 +26,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         
+        //Physics World
         self.physicsWorld.gravity = CGVectorMake(0.0, -4.0)
         self.physicsWorld.contactDelegate = self
         physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
         
-        //Player
+        
+        //Add nodes to beginning of scene
+        self.addChild(self.createPlayer())
+        self.addChild(self.createGround())
+        
+    }
+    
+    //Create Player
+    func createPlayer() -> SKSpriteNode
+    {
         playerSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         playerSprite.xScale = 2
         playerSprite.yScale = 2
@@ -40,16 +50,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         playerSprite.physicsBody.collisionBitMask = groundCategory
         playerSprite.physicsBody.contactTestBitMask = groundCategory
         
+        return playerSprite
+    }
+    
+    //Create Ground
+    func createGround() -> SKSpriteNode
+    {
+        let groundSprite = SKSpriteNode(imageNamed:"ground")
+
         groundSprite.position = CGPoint(x:CGRectGetMidX(self.frame), y:(CGRectGetMinY(self.frame)+137))
         groundSprite.physicsBody = SKPhysicsBody(rectangleOfSize: groundSprite.size)
         groundSprite.physicsBody.dynamic = false
-        groundSprite.physicsBody.friction = 0
+        groundSprite.physicsBody.friction = 0.8
         groundSprite.physicsBody.categoryBitMask = groundCategory
         groundSprite.name = "ground"
         
-        self.addChild(playerSprite)
-        self.addChild(groundSprite)
-        
+        return groundSprite
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -83,13 +99,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     {
         if (touchLoc.x < (CGRectGetMaxX(self.frame)/2))
         {
-            var moveActionLeft = (SKAction.moveByX(-5, y: 0, duration: 0.1))
-            playerSprite.runAction(moveActionLeft)
+            //Move left
+            //var moveActionLeft = (SKAction.moveByX(-5, y: 0, duration: 0.1))
+            //playerSprite.runAction(moveActionLeft)
+            playerSprite.physicsBody.velocity = CGVectorMake(-200, playerSprite.physicsBody.velocity.dy)
         }
         else if (touchLoc.x > (CGRectGetMaxX(self.frame)/2))
         {
-            var moveActionRight = (SKAction.moveByX(5, y: 0, duration: 0.1))
-            playerSprite.runAction(moveActionRight)
+            //Move right
+            //var moveActionRight = (SKAction.moveByX(5, y: 0, duration: 0.1))
+            //playerSprite.runAction(moveActionRight)
+            playerSprite.physicsBody.velocity = CGVectorMake(200, playerSprite.physicsBody.velocity.dy)
         }
     }
     

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Don't Touch the Lava.xcscheme</key>
+		<key>Dont Touch The Lava.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>24DB7FD6194E25CF000B294F</key>
+		<key>24FF91E7195BB80F00B2AF69</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>24DB7FEC194E25CF000B294F</key>
+		<key>24FF91FD195BB80F00B2AF69</key>
 		<dict>
 			<key>primary</key>
 			<true/>

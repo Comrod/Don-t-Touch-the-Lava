@@ -1,8 +1,8 @@
 //
 //  GameScene.swift
-//  Don't Touch the Lava
+//  Dont Touch The Lava
 //
-//  Created by Cormac Chester on 6/15/14.
+//  Created by Cormac Chester on 6/25/14.
 //  Copyright (c) 2014 Extreme Images. All rights reserved.
 //
 

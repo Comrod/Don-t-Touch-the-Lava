@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24FF91EE195BB80F00B2AF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91ED195BB80F00B2AF69 /* AppDelegate.swift */; };
+		24FF91F0195BB80F00B2AF69 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24FF91EF195BB80F00B2AF69 /* GameScene.sks */; };
+		24FF91F2195BB80F00B2AF69 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91F1195BB80F00B2AF69 /* GameScene.swift */; };
+		24FF91F4195BB80F00B2AF69 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91F3195BB80F00B2AF69 /* GameViewController.swift */; };
+		24FF91F7195BB80F00B2AF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF91F5195BB80F00B2AF69 /* Main.storyboard */; };
+		24FF91F9195BB80F00B2AF69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF91F8195BB80F00B2AF69 /* Images.xcassets */; };
+		24FF9205195BB80F00B2AF69 /* Dont_Touch_The_LavaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF9204195BB80F00B2AF69 /* Dont_Touch_The_LavaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24FF91FF195BB80F00B2AF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FF91E0195BB80F00B2AF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FF91E7195BB80F00B2AF69;
+			remoteInfo = "Dont Touch The Lava";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24FF91E8195BB80F00B2AF69 /* Dont Touch The Lava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dont Touch The Lava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF91EC195BB80F00B2AF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FF91ED195BB80F00B2AF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24FF91EF195BB80F00B2AF69 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		24FF91F1195BB80F00B2AF69 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		24FF91F3195BB80F00B2AF69 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		24FF91F6195BB80F00B2AF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24FF91F8195BB80F00B2AF69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		24FF91FE195BB80F00B2AF69 /* Dont Touch The LavaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dont Touch The LavaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF9203195BB80F00B2AF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FF9204195BB80F00B2AF69 /* Dont_Touch_The_LavaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dont_Touch_The_LavaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FF91E5195BB80F00B2AF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF91FB195BB80F00B2AF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24FF91DF195BB80F00B2AF69 = {
+			isa = PBXGroup;
+			children = (
+				24FF91EA195BB80F00B2AF69 /* Dont Touch The Lava */,
+				24FF9201195BB80F00B2AF69 /* Dont Touch The LavaTests */,
+				24FF91E9195BB80F00B2AF69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24FF91E9195BB80F00B2AF69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FF91E8195BB80F00B2AF69 /* Dont Touch The Lava.app */,
+				24FF91FE195BB80F00B2AF69 /* Dont Touch The LavaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FF91EA195BB80F00B2AF69 /* Dont Touch The Lava */ = {
+			isa = PBXGroup;
+			children = (
+				24FF91ED195BB80F00B2AF69 /* AppDelegate.swift */,
+				24FF91EF195BB80F00B2AF69 /* GameScene.sks */,
+				24FF91F1195BB80F00B2AF69 /* GameScene.swift */,
+				24FF91F3195BB80F00B2AF69 /* GameViewController.swift */,
+				24FF91F5195BB80F00B2AF69 /* Main.storyboard */,
+				24FF91F8195BB80F00B2AF69 /* Images.xcassets */,
+				24FF91EB195BB80F00B2AF69 /* Supporting Files */,
+			);
+			path = "Dont Touch The Lava";
+			sourceTree = "<group>";
+		};
+		24FF91EB195BB80F00B2AF69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24FF91EC195BB80F00B2AF69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24FF9201195BB80F00B2AF69 /* Dont Touch The LavaTests */ = {
+			isa = PBXGroup;
+			children = (
+				24FF9204195BB80F00B2AF69 /* Dont_Touch_The_LavaTests.swift */,
+				24FF9202195BB80F00B2AF69 /* Supporting Files */,
+			);
+			path = "Dont Touch The LavaTests";
+			sourceTree = "<group>";
+		};
+		24FF9202195BB80F00B2AF69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24FF9203195BB80F00B2AF69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FF91E7195BB80F00B2AF69 /* Dont Touch The Lava */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FF9208195BB80F00B2AF69 /* Build configuration list for PBXNativeTarget "Dont Touch The Lava" */;
+			buildPhases = (
+				24FF91E4195BB80F00B2AF69 /* Sources */,
+				24FF91E5195BB80F00B2AF69 /* Frameworks */,
+				24FF91E6195BB80F00B2AF69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dont Touch The Lava";
+			productName = "Dont Touch The Lava";
+			productReference = 24FF91E8195BB80F00B2AF69 /* Dont Touch The Lava.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24FF91FD195BB80F00B2AF69 /* Dont Touch The LavaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FF920B195BB80F00B2AF69 /* Build configuration list for PBXNativeTarget "Dont Touch The LavaTests" */;
+			buildPhases = (
+				24FF91FA195BB80F00B2AF69 /* Sources */,
+				24FF91FB195BB80F00B2AF69 /* Frameworks */,
+				24FF91FC195BB80F00B2AF69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FF9200195BB80F00B2AF69 /* PBXTargetDependency */,
+			);
+			name = "Dont Touch The LavaTests";
+			productName = "Dont Touch The LavaTests";
+			productReference = 24FF91FE195BB80F00B2AF69 /* Dont Touch The LavaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FF91E0195BB80F00B2AF69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Extreme Images";
+				TargetAttributes = {
+					24FF91E7195BB80F00B2AF69 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					24FF91FD195BB80F00B2AF69 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 24FF91E7195BB80F00B2AF69;
+					};
+				};
+			};
+			buildConfigurationList = 24FF91E3195BB80F00B2AF69 /* Build configuration list for PBXProject "Dont Touch The Lava" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FF91DF195BB80F00B2AF69;
+			productRefGroup = 24FF91E9195BB80F00B2AF69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FF91E7195BB80F00B2AF69 /* Dont Touch The Lava */,
+				24FF91FD195BB80F00B2AF69 /* Dont Touch The LavaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FF91E6195BB80F00B2AF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF91F9195BB80F00B2AF69 /* Images.xcassets in Resources */,
+				24FF91F0195BB80F00B2AF69 /* GameScene.sks in Resources */,
+				24FF91F7195BB80F00B2AF69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF91FC195BB80F00B2AF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FF91E4195BB80F00B2AF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF91F2195BB80F00B2AF69 /* GameScene.swift in Sources */,
+				24FF91F4195BB80F00B2AF69 /* GameViewController.swift in Sources */,
+				24FF91EE195BB80F00B2AF69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF91FA195BB80F00B2AF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF9205195BB80F00B2AF69 /* Dont_Touch_The_LavaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FF9200195BB80F00B2AF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FF91E7195BB80F00B2AF69 /* Dont Touch The Lava */;
+			targetProxy = 24FF91FF195BB80F00B2AF69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24FF91F5195BB80F00B2AF69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FF91F6195BB80F00B2AF69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24FF9206195BB80F00B2AF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24FF9207195BB80F00B2AF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FF9209195BB80F00B2AF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Dont Touch The Lava/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24FF920A195BB80F00B2AF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Dont Touch The Lava/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		24FF920C195BB80F00B2AF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dont Touch The Lava.app/Dont Touch The Lava";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dont Touch The LavaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		24FF920D195BB80F00B2AF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dont Touch The Lava.app/Dont Touch The Lava";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dont Touch The LavaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FF91E3195BB80F00B2AF69 /* Build configuration list for PBXProject "Dont Touch The Lava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF9206195BB80F00B2AF69 /* Debug */,
+				24FF9207195BB80F00B2AF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FF9208195BB80F00B2AF69 /* Build configuration list for PBXNativeTarget "Dont Touch The Lava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF9209195BB80F00B2AF69 /* Debug */,
+				24FF920A195BB80F00B2AF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24FF920B195BB80F00B2AF69 /* Build configuration list for PBXNativeTarget "Dont Touch The LavaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF920C195BB80F00B2AF69 /* Debug */,
+				24FF920D195BB80F00B2AF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FF91E0195BB80F00B2AF69 /* Project object */;
+}

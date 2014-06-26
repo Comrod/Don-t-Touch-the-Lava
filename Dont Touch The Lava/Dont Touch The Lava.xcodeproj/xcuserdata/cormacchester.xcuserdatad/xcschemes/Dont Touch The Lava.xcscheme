@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24DB7FD6194E25CF000B294F"
-               BuildableName = "Don&apos;t Touch the Lava.app"
-               BlueprintName = "Don&apos;t Touch the Lava"
-               ReferencedContainer = "container:Don&apos;t Touch the Lava.xcodeproj">
+               BlueprintIdentifier = "24FF91E7195BB80F00B2AF69"
+               BuildableName = "Dont Touch The Lava.app"
+               BlueprintName = "Dont Touch The Lava"
+               ReferencedContainer = "container:Dont Touch The Lava.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24DB7FEC194E25CF000B294F"
-               BuildableName = "Don&apos;t Touch the LavaTests.xctest"
-               BlueprintName = "Don&apos;t Touch the LavaTests"
-               ReferencedContainer = "container:Don&apos;t Touch the Lava.xcodeproj">
+               BlueprintIdentifier = "24FF91FD195BB80F00B2AF69"
+               BuildableName = "Dont Touch The LavaTests.xctest"
+               BlueprintName = "Dont Touch The LavaTests"
+               ReferencedContainer = "container:Dont Touch The Lava.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24DB7FD6194E25CF000B294F"
-            BuildableName = "Don&apos;t Touch the Lava.app"
-            BlueprintName = "Don&apos;t Touch the Lava"
-            ReferencedContainer = "container:Don&apos;t Touch the Lava.xcodeproj">
+            BlueprintIdentifier = "24FF91E7195BB80F00B2AF69"
+            BuildableName = "Dont Touch The Lava.app"
+            BlueprintName = "Dont Touch The Lava"
+            ReferencedContainer = "container:Dont Touch The Lava.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24DB7FD6194E25CF000B294F"
-            BuildableName = "Don&apos;t Touch the Lava.app"
-            BlueprintName = "Don&apos;t Touch the Lava"
-            ReferencedContainer = "container:Don&apos;t Touch the Lava.xcodeproj">
+            BlueprintIdentifier = "24FF91E7195BB80F00B2AF69"
+            BuildableName = "Dont Touch The Lava.app"
+            BlueprintName = "Dont Touch The Lava"
+            ReferencedContainer = "container:Dont Touch The Lava.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24DB7FD6194E25CF000B294F"
-            BuildableName = "Don&apos;t Touch the Lava.app"
-            BlueprintName = "Don&apos;t Touch the Lava"
-            ReferencedContainer = "container:Don&apos;t Touch the Lava.xcodeproj">
+            BlueprintIdentifier = "24FF91E7195BB80F00B2AF69"
+            BuildableName = "Dont Touch The Lava.app"
+            BlueprintName = "Dont Touch The Lava"
+            ReferencedContainer = "container:Dont Touch The Lava.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

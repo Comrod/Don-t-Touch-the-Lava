@@ -1,14 +1,14 @@
 //
-//  Don_t_Touch_the_LavaTests.swift
-//  Don't Touch the LavaTests
+//  Dont_Touch_The_LavaTests.swift
+//  Dont Touch The LavaTests
 //
-//  Created by Cormac Chester on 6/15/14.
+//  Created by Cormac Chester on 6/25/14.
 //  Copyright (c) 2014 Extreme Images. All rights reserved.
 //
 
 import XCTest
 
-class Don_t_Touch_the_LavaTests: XCTestCase {
+class Dont_Touch_The_LavaTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
